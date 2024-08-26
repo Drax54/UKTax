@@ -1,0 +1,90 @@
+/* Header styles */
+header {
+  background-color: #333;
+  /* Set background color to dark grey */
+  color: white;
+  /* Set text color to white */
+  padding: 10px 0;
+  /* Padding for top and bottom */
+  width: 100%;
+  /* Make the header full width */
+  position: relative;
+  /* Ensure it spans the entire width of the viewport */
+  border-bottom: 1px solid #ddd;
+  /* Add a subtle border to separate the menu */
+  box-sizing: border-box;
+  /* Include padding in the total width */
+}
+
+/* Remove the width limit from .menu-container */
+.menu-container {
+  display: flex;
+  /* Use flexbox for alignment */
+  justify-content: space-between;
+  /* Space out items */
+  align-items: center;
+  /* Center align items vertically */
+  padding: 0 20px;
+  /* Add some padding to the sides */
+  width: 100%;
+  /* Make the menu container full width */
+  box-sizing: border-box;
+  /* Include padding in the total width */
+}
+
+/* Logo styling */
+.logo img {
+  height: 80px;
+  /* Set the logo height */
+}
+
+/* Navigation menu styles */
+nav {
+  width: 100%;
+  text-align: center;
+  /* Ensure centered alignment */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  /* Space between items */
+  justify-content: center;
+  /* Center align menu items */
+}
+
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-container {
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center align items */
+  }
+
+  nav ul {
+    flex-direction: column;
+    /* Stack menu items vertically */
+    gap: 10px;
+    /* Reduce gap between menu items */
+  }
+}
